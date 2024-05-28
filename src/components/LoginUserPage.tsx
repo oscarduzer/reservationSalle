@@ -22,13 +22,11 @@ export default function LoginUserPage() {
     },
     chipContainerStyle:
     {
-        backgroundColor:'lightblue',
         textTransform:'capitalize',
         width:'100%'
     },
     linkStyle:
     {
-        color:'lightblue',
         textDecoration:'none',
         textTransform:'capitalize'
     },
@@ -76,15 +74,17 @@ export default function LoginUserPage() {
                                               <Stack sx={styles.stackParentStyle} direction={'row'} justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'}>
                                                   <Stack sx={styles.stackChildrenStyle} direction={'row'} justifyContent={'center'} alignItems={'center'}>
                                                       
-                                                          <Chip
-                                                          sx={styles.chipContainerStyle}
-                                                          label={'se connecter'}
-                                                          clickable
-                                                          />
+                                                  <Chip
+                                   sx={styles.chipContainerStyle}
+                                    label={'se connecter'}
+                                    variant='filled'
+                                    color='primary'
+                                    clickable
+                                    />
                                                   </Stack>
 
                                                   <Stack sx={styles.stackChildrenStyle} direction={'row'} justifyContent={'center'} alignItems={'center'}>
-                                                      <Link sx={styles.linkStyle}>Mot de Passe oublié?</Link>
+                                                      <Link href='#' color='primary' sx={styles.linkStyle}>Mot de Passe oublié?</Link>
                                                   </Stack>
                                             </Stack>
                                   </Stack>
